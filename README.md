@@ -33,11 +33,11 @@ catkin_make
  
 
 ### Chạy mô phỏng trên gazebo: 
-
-`roslaunch speech-rotate gazebo-word-rotate.launch`
-
+Sau khi tải về nếu đổi tên folder từ speech_to_text thành speech_rotate thì chạy lệnh dưới
+`roslaunch speech_rotate gazebo-word-rotate.launch`
+Nếu muốn giữ nguyên tên folder speech_to_text thì phải vào file CMakeLists.txt và Packages.xml sửa lại các tên speech_rotate thành speech_to_text rồi chạy lệnh dưới đây
+`roslaunch speech_to_text gazebo-word-rotate.launch`
  
-
 ### Chạy trên robot thực tế: 
 
 `roslaunch speech-rotate word-rotate.launch`
